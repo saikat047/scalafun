@@ -11,7 +11,7 @@ object HelloWorld {
 	  while (true) {
 		  val command = Console.readLine();
 		  println("My lord wishes: " + command)
-		  command match {
+		  command.toLowerCase() match {
 		    case "ls" => println("My Lord, can't show directory listing!")
 		    case "rm" => println("My Lord, removal is not possible!")
 		    case _ => println("Servent is unable to understand your command!")
