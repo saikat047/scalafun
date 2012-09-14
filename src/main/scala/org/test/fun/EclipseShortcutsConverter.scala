@@ -5,7 +5,7 @@ import java.io.Reader
 import java.io.InputStreamReader
 import java.io.PrintWriter
 import java.io.FileWriter
-import scala.io.BufferedSource
+import scala.io.{Source, BufferedSource}
 
 object EclipseShortcutsConverter {
 	def COLOR_ODD = "#ddffdd"
@@ -13,7 +13,7 @@ object EclipseShortcutsConverter {
 	  
 	def main(argv: Array[String]) {
 	  def fileName = "/eclipse-shortcuts.csv"
-	  val bSource: BufferedSource = new BufferedSource(getClass().getResourceAsStream(fileName));
+	  val bSource: BufferedSource = Source.fromInputStream(getClass.getResourceAsStream(fileName));
 	  val printer: PrintWriter = new PrintWriter(new FileWriter("/tmp/output-cool.html"))
 	  printer.println("<html><body><table>")
 	  
