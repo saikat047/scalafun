@@ -1,0 +1,44 @@
+Ctrl + Shift + T,Find Java Type
+Ctrl + Shift + R,Find Resource
+Ctrl + L,Go to Line
+Ctrl + H,Open Search Dialog
+Ctrl + Alt + Down,Copy Lines
+Ctrl + E,Open Editor Drop Down
+Ctrl + O,Quick Outline
+Ctrl + Space,Content Assist
+Ctrl + Shift + Space,Context Information
+Ctrl + Shift + O,Organize Imports
+F3,Open Declaration
+Alt + Left,Backward History
+Alt + Right,Forward History
+F4,Open Type Hierarchy
+Ctrl + Alt + H, Open Call Hierarchy
+Alt + Shift + R, Rename   Refactoring
+Alt + Shift + L, Extract Local Variable
+Alt + Shift + M, Extract Method
+Alt + Shift + Up,Select Enclosing Element
+Alt + Shift + Down,Restore Last Selection
+Alt + Shift + Left,Select Previous Element
+Alt + Shift + Right,Select Next Element
+Ctrl + Up,Scroll Line Up
+Ctrl + Down,Scroll Line Down
+Ctrl + Shift + Up,Go to Previous Member
+Ctrl + Shift + Down,Go to Next Member
+Ctrl + Shift + U,Show Occurrences in File
+Alt + Shift + U, Remove Occurrences Annotations
+Ctrl + Shift + P,Go to Matching Bracket
+Ctrl + J,Incremental Find
+Ctrl + Shift + J,Reverse Incremental Find
+Shift + Enter,Insert Line Below
+Ctrl + Shift + Enter,Insert Line Above
+Ctrl + /,Add Block Comment
+Ctrl + \,Remove Block Comment
+Ctrl + M,Maximize Active View or Editor
+Ctrl + F6,Next Editor
+Ctrl + F7,Next View
+Ctrl + F8,Next Perspective
+Ctrl + Alt + Up, Duplicate Lines
+Alt + /, Word Completion
+Ctrl + I,Correct Indentation
+Shift Tab,Remove Tab
+Tab,Add Tab
