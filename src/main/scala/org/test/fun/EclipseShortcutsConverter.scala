@@ -8,6 +8,9 @@ import java.io.FileWriter
 import scala.io.BufferedSource
 
 object EclipseShortcutsConverter {
+	def COLOR_ODD = "#ddffdd"
+	def COLOR_EVEN = "#DDEEFF"
+	  
 	def main(argv: Array[String]) {
 	  def fileName = "/eclipse-shortcuts.csv"
 	  val bSource: BufferedSource = new BufferedSource(getClass().getResourceAsStream(fileName));
@@ -21,7 +24,7 @@ object EclipseShortcutsConverter {
     	val desc = keyValuePair(1)
     	odd = !odd;
     	var color:String = null;
-    	if (odd) color = "#ddffdd" else color = "#DDEEFF"
+    	if (odd) color = COLOR_ODD else color = COLOR_EVEN
     	printer.println("<tr style=\"background-color: " + color + 
     	                ";\"><td>" + shortCut + "</td><td>" + desc + 
     	                "</td></tr>")
