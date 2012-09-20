@@ -26,7 +26,7 @@ object OverrideTest {
       println(getName + " quacks in its own class")
     }
     
-    override def quack() = {
+    override def quack() : Unit = {
       println(getName + " overrides quack")
     }
   }

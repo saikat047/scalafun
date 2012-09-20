@@ -20,10 +20,10 @@ object MultiConstructor {
     def this(name: String) = {
     	this(name, 0, false)
     }
-    def this(age: Int) {
+    def this(age: Int) = {
     	this(null, age, false)
     }
-    def this(honesty: Boolean) {
+    def this(honesty: Boolean) = {
     	this(null, 0, honesty)
     }
     
