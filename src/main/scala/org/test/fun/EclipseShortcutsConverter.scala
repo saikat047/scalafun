@@ -23,8 +23,7 @@ object EclipseShortcutsConverter {
     	val shortCut = keyValuePair(0)
     	val desc = keyValuePair(1)
     	odd = !odd;
-    	var color:String = null;
-    	if (odd) color = COLOR_ODD else color = COLOR_EVEN
+    	val color = if (odd) COLOR_ODD else COLOR_EVEN;
     	printer.println("<tr style=\"background-color: " + color + 
     	                ";\"><td>" + shortCut + "</td><td>" + desc + 
     	                "</td></tr>")
