@@ -18,10 +18,10 @@ object BinarySearch {
 	def binarySearch(left: Int, right: Int, values: Array[Int], target: Int) : Int = {
 	    val index: Int = (left + right) / 2;
 	    index match {
-	      case not_found if right < left => return -1
-	      case lower if target < values(index) => {println("less than " + values(index)); return binarySearch(0, index - 1, values, target)}
-	      case higher if target > values(index) => {println("more than " + values(index)); return binarySearch(index + 1, right, values, target)}
-	      case match_found if target == values(index) => {println("found at " + index); return index}
+	      case not_found if right < left => -1
+	      case lower if target < values(index) => {println("less than " + values(index)); binarySearch(0, index - 1, values, target)}
+	      case higher if target > values(index) => {println("more than " + values(index)); binarySearch(index + 1, right, values, target)}
+	      case match_found if target == values(index) => {println("found at " + index); index}
 	    }
 	}
 }
